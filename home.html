@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome to angular pages!!!</title>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/apps/app.js"></script>
+<script src="scripts/apps/controllers/test-controller.js"></script>
+<script src="scripts/apps/services/test-service.js"></script>
+</head>
+<body>
+Hellllo...
+<div ng-app="ang-test" ng-controller="TestController">
+<input type="text" ng-model="name">{{ name }}
+<ul ng-init="directory=[{'name':'Sarva', 'city':'SF'},{'name':'Subbu', 'city':'CHN'}]">
+<li ng-repeat="dir in directory">{{ dir.name + ' - ' + dir.city }}</li>
+</ul>
+</div>
+</body>
+</html>
